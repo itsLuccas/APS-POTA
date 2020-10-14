@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 // @author Isabela Ett_21058253 Luccas de Felice_21202861
 
-//testando git hub
+//teste porra
 public class Ordenar {
 
     public static void randomize(int[] array) {
