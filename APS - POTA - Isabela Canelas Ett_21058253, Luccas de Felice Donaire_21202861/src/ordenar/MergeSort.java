@@ -20,9 +20,9 @@ public class MergeSort implements Sortable{
         int cont = 0;
         if(p < r) {
             q = (p + r) / 2;
-            mergesort(array, p, q);
-            mergesort(array, q+1, r);
-            cont = intercala(array, p, q, r);
+            cont += mergesort(array, p, q);
+            cont += mergesort(array, q+1, r);            
+            cont += intercala(array, p, q, r);
         }
         return cont;
     }
@@ -44,14 +44,14 @@ public class MergeSort implements Sortable{
         i = p;
         j = r;
         
-        for(k = p; k <= r; k++) {
+        for(k = p; k <= r; k++) {            
+            cont++;
+            System.out.println("1");
             if(arrayAux[i] <= arrayAux[j]) {
                 array[k] = arrayAux[i];
-                cont++;
                 i = i+1;
             } else {
                array[k] = arrayAux[j];
-               cont++;
                j = j -1;
             }
         }

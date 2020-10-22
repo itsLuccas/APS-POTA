@@ -22,18 +22,19 @@ public class Ordenar {
     } 
     
     public static void main(String[] args) {
-        int [] tamanhos = {5, 10, 50, 100, 1000, 10000};
+        //int [] tamanhos = {5, 10, 50, 100, 1000, 10000};
+        int [] tamanhos = {100};
         
         for(int j=0; j<tamanhos.length; j++){
             int[] array = new int[tamanhos[j]];
             randomize(array);
 
             ArrayList <Sortable> algoritmos = new ArrayList<>();
-            algoritmos.add(new BubbleSort());
-            algoritmos.add(new SelectionSort());
-            algoritmos.add(new InsertionSort());
+            //algoritmos.add(new BubbleSort());
+            //algoritmos.add(new SelectionSort());
+            //algoritmos.add(new InsertionSort());
             algoritmos.add(new MergeSort());
-            //algoritmos.add(new QuickSort());
+            algoritmos.add(new QuickSort());
             
             System.out.println("\nTAMANHO DO VETOR =  " + tamanhos[j]);
 
