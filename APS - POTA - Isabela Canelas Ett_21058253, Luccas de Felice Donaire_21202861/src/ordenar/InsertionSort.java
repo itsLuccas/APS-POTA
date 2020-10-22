@@ -16,15 +16,16 @@ public class InsertionSort implements Sortable{
     
     public int sort(int[] array) {
         int n = array.length;    
-        int count = 0;
+        int cont = 0;
         for(int i = 1; i < n; i++) {
             int j = i;
             while(j > 0 && array[j-1] > array[j]) {
                 inverter(array, j, j-1);
                 j--;
-                count ++;
+                cont++;
             }
+            cont++;
         }
-        return count;
+        return cont;
     }
 }

@@ -16,7 +16,7 @@ public class BubbleSort implements Sortable{
     
     public int sort(int[] array) {
         int n = array.length;
-        int count = 0;
+        int cont = 0;
         boolean invertido;        
         do {
             invertido = false;
@@ -24,11 +24,11 @@ public class BubbleSort implements Sortable{
                 if(array[i-1] > array[i]) {
                     inverter(array, i-1, i);
                     invertido = true;
-                    count++;
-                }
+                }                
+                cont++;
             }            
         }while(invertido == true);
-        return count;
+        return cont;
     }
 }
     

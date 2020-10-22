@@ -13,9 +13,9 @@ public class SelectionSort implements Sortable{
             minimo = i;
             for(int j = i + 1; j < array.length; j++) {
                 if(array[j] < array[minimo]) {                    
-                    minimo = j;
-                    cont++;
+                    minimo = j;                    
                 }
+                cont++;
             }
             temp = array[i];
             array[i] = array[minimo];
