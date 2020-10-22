@@ -45,8 +45,7 @@ public class MergeSort implements Sortable{
         j = r;
         
         for(k = p; k <= r; k++) {            
-            cont++;
-            System.out.println("1");
+            cont++;            
             if(arrayAux[i] <= arrayAux[j]) {
                 array[k] = arrayAux[i];
                 i = i+1;

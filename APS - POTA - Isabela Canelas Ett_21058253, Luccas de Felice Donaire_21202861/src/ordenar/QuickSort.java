@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ordenar;
 
-/**
- *
- * @author lucca
- */
+// @author Isabela Ett_21058253 Luccas de Felice_21202861
+
 public class QuickSort implements Sortable{
     public int sort(int[] array) {
         int cont = quicksort(array, 0, array.length-1);
@@ -35,15 +28,12 @@ public class QuickSort implements Sortable{
         
         while(i <= j) {            
             if(array[i] < array[inicio]) {  
-                System.out.println("1");
                 cont++;
                 i++;
-            } else if(array[j] > array[inicio]) {  
-                System.out.println("2");
+            } else if(array[j] > array[inicio]) {
                 cont += 2;
                 j--;
-            } else {
-                System.out.println("2");
+            } else {                
                 cont += 2;
                 aux = array[i];
                 array[i] = array[j];
